@@ -5,10 +5,10 @@ function helloWorld() {
 //helloWorld()
 
 function secondHello(name: string) {
-    console.log(siriluk)
+    console.log(name)
 }
 // รับ input แต่ไม่มี output
-//secondHello('thaNaWat')
+//secondHello('anchisa')
 
 function getPi() {
     return 3.14
@@ -16,31 +16,20 @@ function getPi() {
 //ไม่มี input แต่มี output
 //console.log(getPi())
 
-function st(Fname: string, sname: string) {
-    if (Fname === 'nan' && sname === 'plam') {
-        console.log ('เรียนสอน')
-    } else {
-        console.log('ยังไม่สอน')
-    }
-}
-
-st('nan' , 'plam')
-
-function start(Fname: string, sname: string, Tname: string) {
-    if ((Fname === 'nan' && sname === 'plam') && Tname === 'YO') {
+function st(Fname: string, sname: string, Tname: string) {
+    if (!(Fname === 'nan' && sname === 'plam') && Tname === 'YO') {
         console.log('เริ่มสอน')
     } else {
         console.log('ยังไม่สอน')
     }
 }
 
-start('nan' , 'plam' , 'YO') 
-
-function siriluk(sex: string, height: number) {
+st('nan' , 'plam' , 'YO')
+function anchisa(sex: string, height: number) {
     if (sex === 'ชาย' && height > 170) {
         console.log('จับใบดำใบแดง')
     } else {
         console.log('ไม่เข้าเกณฑ์')
     }
 }
-siriluk('ชาย', 160) 
+anchisa('ชาย', 160)
